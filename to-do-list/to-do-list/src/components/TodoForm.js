@@ -1,14 +1,26 @@
-import React,{useState} from 'react';
+import React from 'react';
+import {useState} from 'react';
+
+
 //try using in state : react hooks for state management
 
-export const TodoForm =()=>{
+export const TodoForm =({addTodo})=>{
+    // importing that property from the todoWrapper.js
+    const [value, setValue]=useState("")
+     const handleSubmit = e=>{
+        e.preventDefault();
+        // e.preventDefault() is used to prevent the default behaviour of the browser
+       addTodo(value)
+       setValue("")
+     }
 
     return (
         
-        <form className='TodoForm'> 
+        <form className='TodoForm' onSubmit={handleSubmit}> 
         
       
         <input type="text" className='Todo-input' 
+        value={value} 
         placeholder='what is the task today'
 
         onChange={(e)=> console.log(e.target.value)}/>
@@ -24,4 +36,3 @@ export const TodoForm =()=>{
 
     )
 }
-xx

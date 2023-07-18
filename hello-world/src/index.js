@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// react-dom is the package that provides DOM-specific methods, like render.it renders the app componet into the root on to the root which is set in public/index.html
 root.render(
   <React.StrictMode>
     <App />

@@ -1,0 +1,13 @@
+what are componets
+application has 5 components : header sidenav main content and footer
+they are reuseable 
+
+how does a components are used in app ?
+thye are in jsfiles aand appjs even jsx
+two componest are stateless funcitonal component and sttateful class component
+
+
+Summerise the content :
+Components descirbe a part of the user interface
+they are re-usable like the right nav could be re used to left 
+two types are stateless fucntional  and sttateful class components

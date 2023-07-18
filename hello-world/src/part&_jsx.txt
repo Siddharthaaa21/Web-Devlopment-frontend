@@ -1,0 +1,7 @@
+Jsx!!
+eextension to js language sysntax
+not a necessity but simpler and elegent 
+transpiles to pure js which is understood by browers 
+
+jsx diffeence
+class-> classNamefor -> htmlfor

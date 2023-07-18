@@ -16,3 +16,6 @@ maintain their own private data
 
 
 in all component we return not regular html but jsx!!
+
+Hooks cna be used in both!
+learn hooks !

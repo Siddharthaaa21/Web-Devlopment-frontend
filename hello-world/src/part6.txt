@@ -1,0 +1,18 @@
+Fucntional components:
+simple fucntuons 
+use func component as much as possible 
+absense of this keyword
+solution without using state!
+mainly responsibke for ui 
+Stateless Dumb Presentational 
+
+
+
+class:
+more feature rich 
+complex ewui 
+stateful smart container
+maintain their own private data 
+
+
+in all component we return not regular html but jsx!!

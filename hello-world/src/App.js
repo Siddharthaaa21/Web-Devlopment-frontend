@@ -1,10 +1,17 @@
+import React, { Component } from 'react'; 
 import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+
+
+
+class App extends Component {
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello world!
@@ -17,9 +24,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+     
+      <Greet/>
+      {/* <Welcome/> */}
+      <Welcome/>
     </div>
   );
+}
 }
 
 export default App;

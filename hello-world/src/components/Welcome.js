@@ -5,6 +5,7 @@ class Welcome extends Component {
     //second thing is we need to define render method which returns html
     render() {
         return <h1>hi {this.props.name}and i k that {this.props.Heroname}</h1>
+        //can be directly use name and Heroname instead of this.props.name and this.props.Heroname by const {name,Heroname}=this.props 
     }
 }
 export default Welcome;

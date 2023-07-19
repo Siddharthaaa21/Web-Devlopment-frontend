@@ -6,6 +6,7 @@ import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 
 
@@ -38,6 +39,7 @@ class App extends Component {
       <Welcome name="siddhartha1" Heroname="important"/>
       <Welcome name="siddhartha2" Heroname="important"/>  */}
       <Message name="new" Heroname="i k you"/>
+      <Counter/>
     </div> 
   );
 }

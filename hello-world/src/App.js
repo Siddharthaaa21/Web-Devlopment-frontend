@@ -7,6 +7,8 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import Classclick from './components/Classclick';
 
 
 
@@ -32,14 +34,16 @@ class App extends Component {
       <Greet/>
       {/* <Welcome/> */}
       {/* <Hello/> */}
-      <Greet name="siddhartha" Heroname="is the only batman"/>
+      {/* <Greet name="siddhartha" Heroname="is the only batman"/>
       <Greet name="siddhartha1"Heroname="is the only savior"/>
-      <Greet name="siddhartha2"Heroname="is the only important"  />
+      <Greet name="siddhartha2"Heroname="is the only important"  /> */}
       {/* * <Welcome name="siddhartha"Heroname="important"/>
       <Welcome name="siddhartha1" Heroname="important"/>
       <Welcome name="siddhartha2" Heroname="important"/>  */}
       <Message name="new" Heroname="i k you"/>
       <Counter/>
+      <FunctionClick/>
+      <Classclick/>
     </div> 
   );
 }

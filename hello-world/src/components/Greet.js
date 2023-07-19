@@ -7,6 +7,9 @@ import React from 'react';
 //  first funtional component 
 //prefered way to write functional component is arrow function
 const Greet=(props)=>{
+
+    //another way to use props will be  const Greet=({name,Heroname})=>{ return <h1>Hello {name} is {Heroname}</h1>}
+    //another one could be const Greet = props =>{const {name.Heroname}=props return <h1>Hello {name} is {Heroname}</h1>
     console.log(props) 
     return<h1>Hello {props.name} is {props.Heroname}</h1>}
 export default Greet

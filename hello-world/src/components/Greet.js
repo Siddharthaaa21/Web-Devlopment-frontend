@@ -6,7 +6,9 @@ import React from 'react';
 // export default Greet
 //  first funtional component 
 //prefered way to write functional component is arrow function
-const Greet=()=> <h1>Hello Siddhartha</h1>
+const Greet=(props)=>{
+    console.log(props) 
+    return<h1>Hello {props.name} is {props.Heroname}</h1>}
 export default Greet
 // we can change name inside qpp.js from Greet tp any other in the import and custom funtion tag
 //can add export default Greet in the function itself like 

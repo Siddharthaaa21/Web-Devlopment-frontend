@@ -5,6 +5,7 @@ import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
 
 
 
@@ -33,9 +34,10 @@ class App extends Component {
       <Greet name="siddhartha" Heroname="is the only batman"/>
       <Greet name="siddhartha1"Heroname="is the only savior"/>
       <Greet name="siddhartha2"Heroname="is the only important"  />
-      * <Welcome name="siddhartha"Heroname="important"/>
+      {/* * <Welcome name="siddhartha"Heroname="important"/>
       <Welcome name="siddhartha1" Heroname="important"/>
-      <Welcome name="siddhartha2" Heroname="important"/> 
+      <Welcome name="siddhartha2" Heroname="important"/>  */}
+      <Message name="new" Heroname="i k you"/>
     </div> 
   );
 }

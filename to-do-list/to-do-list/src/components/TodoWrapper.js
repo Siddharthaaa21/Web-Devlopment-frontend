@@ -5,6 +5,10 @@ import {Todo} from './Todo';
 uuidv4();//initialising and calling it.//same thing they are 
 
 export const TodoWrapper =()=>{
+  const toggleComplete = id =>{
+    setTodos(todos.map(todo=> todo.id === id? {...todo, completed: !todo.completed}: todo)))
+  } //=== returns boolenan value //
+
     const [todos, setTodo]=useState([])
     //use state is used for state management to add react hooks well have to do 
     
@@ -28,7 +32,8 @@ export const TodoWrapper =()=>{
           
               {/* Iterate over the todos array and render Todo components */}
               {todos.map((todo, index) => (
-                <Todo task={todo} key={index} />
+                <Todo task={todo} key={index} 
+                toggleComplete={toggleComplete}/>
               ))}
             </div>
           )

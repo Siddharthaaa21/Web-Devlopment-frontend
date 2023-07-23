@@ -2,21 +2,27 @@ import React from 'react';
 import {useState} from 'react';
 
 
-//try using in state : react hooks for state management
+
 
 export const TodoForm =({addTodo})=>{
-    //is a prop.
-    // importing that property from the todoWrapper.js
+  
     const [value, setValue]=useState("")
-    // useState is a react hook which is used for state management
      const handleSubmit = e=>{
         e.preventDefault();
-        // e.preventDefault() is used to prevent the default behaviour of the browser
        addTodo(value)
-       // passing the value to the addTodo function
+      
        setValue("")
-         // setting the value to empty string
+         
      }
+     //try using in state : react hooks for state management
+       //is a prop.
+    // importing that property from the todoWrapper.js
+         // useState is a react hook which is used for state management
+
+             // e.preventDefault() is used to prevent the default behaviour of the browser
+
+      // passing the value to the addTodo function
+     // setting the value to empty string
 
     return (
         

@@ -6,10 +6,9 @@ import './TodoWrapper';
           
 export const Todo = ({task}) => {
     return (
-        <div className='Todo'
-        >
-            <p>
-              {task.task}
+        <div className='Todo'>
+            <p onClick={()=> toggleComplete(task.id)} className={'${task.completed ? 'completed': ""}}> 
+                         {task.task}
               {/* //task is a prop from 
               */}
             </p>

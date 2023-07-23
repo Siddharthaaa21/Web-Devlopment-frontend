@@ -9,6 +9,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import Classclick from './components/Classclick';
+import Eventbind from './components/Eventbind';
 
 
 
@@ -44,6 +45,7 @@ class App extends Component {
       <Counter/>
       <FunctionClick/>
       <Classclick/>
+      <Eventbind/>
     </div> 
   );
 }

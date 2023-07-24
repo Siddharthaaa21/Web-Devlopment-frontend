@@ -33,10 +33,10 @@ export const TodoForm =({addTodo})=>{
         
       
         <input type="text" className='todo-input' value={value} 
-        placeholder='what is the task today'
+        placeholder='What are the task for today'
         onChange={(e)=> setValue(e.target.value)}/>
     
-        <button type='submit' className='Todo-button'>Add</button>
+        <button type='submit' className='Todo-button'>Commit</button>
        </form>
          /*  onChange={(e)=> console.log(e.taret.value)} is a like onchange in flutter ro see the state of the button lets say  console.log is for basically giving output e is for 
     event and placeholder is a hint text  */

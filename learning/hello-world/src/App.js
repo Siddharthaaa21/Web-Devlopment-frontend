@@ -10,6 +10,7 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import Classclick from './components/Classclick';
 import Eventbind from './components/Eventbind';
+import ParentComponent from './components/ParentComponent';
 
 
 
@@ -46,6 +47,7 @@ class App extends Component {
       <FunctionClick/>
       <Classclick/>
       <Eventbind/>
+      <ParentComponent />
     </div> 
   );
 }

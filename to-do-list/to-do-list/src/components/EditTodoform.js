@@ -6,7 +6,7 @@ import {useState} from 'react';
 
 export const EditTodoForm =({editTodo,task})=>{
   
-    const [value, setValue]=useState(task.task)
+    const [value, setValue]=useState(task.task)// task is a prop passed from todoWrapper.js
      const handleSubmit = e=>{
         e.preventDefault();
        editTodo(value,task.id)
@@ -33,7 +33,7 @@ export const EditTodoForm =({editTodo,task})=>{
         placeholder='update'
         onChange={(e)=> setValue(e.target.value)}/>
     
-        <button type='submit' className='Todo-button'>Updating</button>
+        <button type='submit' className='Todo-button'>Update</button>
        </form>
          /*  onChange={(e)=> console.log(e.taret.value)} is a like onchange in flutter ro see the state of the button lets say  console.log is for basically giving output e is for 
     event and placeholder is a hint text  */

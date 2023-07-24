@@ -61,3 +61,4 @@ export const TodoWrapper =()=>{
           )
         
 }
+//isEditing is a property which is set to false by default

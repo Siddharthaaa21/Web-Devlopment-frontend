@@ -11,6 +11,7 @@ import FunctionClick from './components/FunctionClick';
 import Classclick from './components/Classclick';
 import Eventbind from './components/Eventbind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
 
 
 
@@ -48,6 +49,7 @@ class App extends Component {
       <Classclick/>
       <Eventbind/>
       <ParentComponent />
+      <UserGreeting/>
     </div> 
   );
 }

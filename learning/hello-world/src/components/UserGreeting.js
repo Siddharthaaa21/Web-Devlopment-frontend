@@ -25,6 +25,11 @@ import React, { Component } from 'react'
         }
         returrn <div>{message}</div>
     } */}
+    {/* conditonal operator approach 
+    return (
+        this.state.isLoggedIn ? (<div> welocme siddhartha</>):(another item )
+    ) */}
+    {/* this.state.isLoggedIn &&<div>welcome siddhartha<div/> */}
         
        
        

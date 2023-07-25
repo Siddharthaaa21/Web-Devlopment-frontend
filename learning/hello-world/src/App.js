@@ -12,6 +12,7 @@ import Classclick from './components/Classclick';
 import Eventbind from './components/Eventbind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './NameList';
 
 
 
@@ -50,6 +51,7 @@ class App extends Component {
       <Eventbind/>
       <ParentComponent />
       <UserGreeting/>
+      <NameList/>
     </div> 
   );
 }

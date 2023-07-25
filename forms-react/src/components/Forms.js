@@ -19,12 +19,29 @@ function Forms() {
 
         <div className='Form-validation'>
         <label>Email</label>
-          <input type="text" name="email"{...register("email")}/>
+          <input type="text"
+           name="email"
+           {...register("email",
+           {required:true,
+          pattern: /^\S+@\S+$/i,}
+
+           )}/>
+
+           {errors.email && errors.email.type==="required"&& (<p className='errorMsg'>Email required</p>)}
+           {errors.email && errors.email.type==="pattern"&& (<p className='errorMsg'>Email invalid</p>)}
         </div>
           
         <div className='Form-Password'>
         <label>password</label>
-          <input type="password" name="pasword"{...register("pasword")}/>
+          <input type="password"
+           name="password"
+           {...register("pasword", 
+           {required:true,
+          minLength:7,}
+           )}/>
+           {errors.password && errors.password.type === "required"(<p className='errorMsg'>password required</p>)}
+           {/* this is a form of conditional rendering  */}
+           {errors.password && errors.password.type ==="minLength" && (<p className='errorMsg'>password must be 7 characters</p>)}
         </div>
 
        

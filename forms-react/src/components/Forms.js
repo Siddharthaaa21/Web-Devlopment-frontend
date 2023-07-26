@@ -23,26 +23,29 @@ function Forms() {
            name="email"
            {...register("email",
            {required:true,
-          pattern: /^\S+@\S+$/i,}
+          pattern: /^\S+@\S+$/i,
+        message: "not correct format re check "}
 
            )}/>
 
            {errors.email && errors.email.type==="required"&& (<p className='errorMsg'>Email required</p>)}
-           {errors.email && errors.email.type==="pattern"&& (<p className='errorMsg'>Email invalid</p>)}
+           {errors.email && errors.email.type==="pattern"&& (<p className='errorMsg'> not correct </p>)}
         </div>
           
         <div className='Form-Password'>
-        <label>password</label>
-          <input type="password"
-           name="password"
-           {...register("pasword", 
-           {required:true,
-          minLength:7,}
-           )}/>
-           {errors.password && errors.password.type === "required"(<p className='errorMsg'>password required</p>)}
-           {/* this is a form of conditional rendering  */}
-           {errors.password && errors.password.type ==="minLength" && (<p className='errorMsg'>password must be 7 characters</p>)}
-        </div>
+  <label>Password</label>
+  <input
+    type="password"
+    name="password"
+    {...register("password", {
+      required: true,
+      minLength: 7,
+    })}
+  />
+  {errors.password && errors.password.type === "required" && ( <p className='errorMsg'>password required</p>)}
+  {errors.password && errors.password.type === "minLength" && (<p className='errorMsg'>password too short</p>)}
+</div>
+
 
        
         <div className='Form-Password'>

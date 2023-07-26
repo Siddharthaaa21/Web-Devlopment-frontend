@@ -37,19 +37,3 @@
   }
 }
  
-.Form {
-  width: 400px;
-  margin: 0 auto;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-}
-.Form h2 {
-  text-align: center;
-}
-.Forms-check{
-  align-items: center;  margin: 0 auto;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-} 

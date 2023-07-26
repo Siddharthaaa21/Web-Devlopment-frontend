@@ -13,6 +13,7 @@ import Eventbind from './components/Eventbind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './NameList';
+import Stylesheets from './components/Stylesheets';
 
 
 
@@ -52,6 +53,7 @@ class App extends Component {
       <ParentComponent />
       <UserGreeting/>
       <NameList/>
+      <Stylesheets/>
     </div> 
   );
 }

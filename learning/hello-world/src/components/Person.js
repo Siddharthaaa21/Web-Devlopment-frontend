@@ -7,5 +7,6 @@ export default function Person({personist}) {
 
       
     </div>
+    //console throughs an error that keys should be used 
   )
 }

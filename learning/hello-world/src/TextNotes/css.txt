@@ -1,0 +1,7 @@
+styling react components has 4 ways 
+1 css stylesheets 
+2 inline styling 
+3 css modu;es
+4 css in js libaries
+
+

@@ -14,8 +14,26 @@ function Forms() {
         //data is an object that contains all the values of the form
     }
   return (
+  
     <div className='Forms-check'>
       <form onSubmit = {handleSubmit(onSubmit)}>
+        <div className='Form-user-name'>
+          <label>UserName</label>
+          <input type="text"
+                name="username"
+                {...register("username",
+                {
+                  required: true,
+                  pattern:{
+                    value: /^(?=.*[A-Z])(?=.*[a-z])/,
+                    message: "use on capital and rest small"
+                  },
+
+                })}/>
+                {errors.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
+                {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.message}</p>)}
+
+        </div>
 
         <div className='Form-validation'>
         <label>Email</label>

@@ -2,12 +2,18 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import './errors.css'; 
 function Forms() {
+  //to implement this we have to add reset in the form tag 
+  //reset is a function that will reset the formqs
+ 
     const{
         register, //is a funtion that will help us to register the inputs 
 
         handleSubmit, // is a function we use when the form is submitted 
-        formState: { errors }, //error is a nested property of fromState which contains validaton of errors
+        formState: { errors },        //error is a nested property of fromState which contains validaton of errors
+
+        reset, 
     }=useForm(); 
+    
     const onSubmit = (data_ob) =>
     {
         console.log(data_ob);
@@ -27,11 +33,12 @@ function Forms() {
                   pattern:{
                     value: /^(?=.*[A-Z])(?=.*[a-z])/,
                     message: "use on capital and rest small"
+                   
                   },
 
                 })}/>
                 {errors.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
-                {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.message}</p>)}
+                {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.pattern.message}</p>)}
 
         </div>
 

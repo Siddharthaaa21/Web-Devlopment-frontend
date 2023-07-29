@@ -8,6 +8,14 @@ export default function Sign_in() {
 
   const {register , handleSubmit , errors} = useForm();
   const onSubmit=(info)=> console.log(info)
+  const validate(value){
+    if(value===password){
+      return true
+    }
+    else{
+      return false
+    }
+  }
   return (
 
    <section>
@@ -19,17 +27,25 @@ export default function Sign_in() {
          
 
       <form id ='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
-        <input type='text' placeholder='first name' name='name'{...register("name")}/>
-        <input type='text' placeholder='email' name='email'{...register("email",{required:true})}/>
-        <input type='text' placeholder='password' name='password'{...register("password",
+        <input type='text' placeholder='first name' {...register("name")}/>
+        <input type='text' placeholder='Email'{...register("email",{required:true})}/>
+
+        <input type='text' placeholder='password' {...register("password",
         {required:true,
         minLength:7})}/>
+        
+
         <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:true,
-        minLength:7})}/>
-         {errors.email?.type === "required" && "email is required"}
-         {errors.password?.type==="required"&&"password is required"}
+        minLength:7,
+        validate:(value)=>validate(value) 
+        
+
+      })}/>
+        {errors.email?.type === "required" && <p>Email is required</p>}
+        {errors.password?.type==="required"&&"password is required"}
         {errors.password?.type === "minLength" && "Atleast 7 characters is required"}
 
+         
 
         <button className='btn'>Sign In</button>
         </form>

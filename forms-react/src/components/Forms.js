@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import './errors.css'; 
 function Forms() {
     const{
         register, //is a funtion that will help us to register the inputs 

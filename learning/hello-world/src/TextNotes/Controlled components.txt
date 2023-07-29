@@ -1,0 +1,4 @@
+input eletemt hacs tyle cakye ob change 
+this.changeEmailHandler =(event) => {
+    rhis.setState{{email:event.target.value}}
+}

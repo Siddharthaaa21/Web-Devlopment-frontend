@@ -12,8 +12,9 @@ import Classclick from './components/Classclick';
 import Eventbind from './components/Eventbind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
-import NameList from './NameList';
+// import NameList from './NameList';
 import Stylesheets from './components/Stylesheets';
+import CustomclassName from './components/CustomclassName';
 
 
 
@@ -45,15 +46,16 @@ class App extends Component {
       {/* * <Welcome name="siddhartha"Heroname="important"/>
       <Welcome name="siddhartha1" Heroname="important"/>
       <Welcome name="siddhartha2" Heroname="important"/>  */}
-      <Message name="new" Heroname="i k you"/>
+      {/* <Message name="new" Heroname="i k you"/>
       <Counter/>
       <FunctionClick/>
       <Classclick/>
       <Eventbind/>
       <ParentComponent />
-      <UserGreeting/>
-      <NameList/>
-      <Stylesheets/>
+      <UserGreeting/> */}
+      {/* <NameList/> */}
+       <Stylesheets/> 
+      <CustomclassName primary={false}/>
     </div> 
   );
 }

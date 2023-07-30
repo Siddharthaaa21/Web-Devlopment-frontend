@@ -8,9 +8,10 @@ export default function Sign_in() {
 
   const {register , handleSubmit , errors} = useForm();
   const onSubmit=(info)=> console.log(info)
-  const validate(value){
+  const validate=(value)=>{
     if(value===password){
       return true
+      
     }
     else{
       return false
@@ -35,12 +36,8 @@ export default function Sign_in() {
         minLength:7})}/>
         
 
-        <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:true,
-        minLength:7,
-        validate:(value)=>validate(value) 
-        
-
-      })}/>
+        <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:{validate(value)}, minLength:7  })}/>
+        {/* fix this  */}
         {errors.email?.type === "required" && <p>Email is required</p>}
         {errors.password?.type==="required"&&"password is required"}
         {errors.password?.type === "minLength" && "Atleast 7 characters is required"}

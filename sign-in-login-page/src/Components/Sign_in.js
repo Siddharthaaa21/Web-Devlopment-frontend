@@ -33,13 +33,15 @@ export default function Sign_in() {
 
         <input type='text' placeholder='password' {...register("password",
         {required:true,
-        minLength:7})}/>
+        minLength:7,})}/>
         
 
-        <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:{validate(value)}, minLength:7  })}/>
+        <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:true, minLength:7 ,
+          validate:(value)=>validate(value)
+        })}/>
         {/* fix this  */}
         {errors.email?.type === "required" && <p>Email is required</p>}
-        {errors.password?.type==="required"&&"password is required"}
+        {errors.password?.type==="required"&&" confirm password is required"}
         {errors.password?.type === "minLength" && "Atleast 7 characters is required"}
 
          

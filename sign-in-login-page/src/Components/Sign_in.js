@@ -4,19 +4,18 @@ import img1 from './assests/images/img1.jpg'
 import './Sign_in.css'
 
 
-export default function Sign_in() {
+export default function SignIn() {
 
-  const {register , handleSubmit , errors} = useForm();
-  const onSubmit=(info)=> console.log(info)
-  const validate=(value)=>{
-    if(value===password){
-      return true
-      
-    }
-    else{
-      return false
-    }
-  }
+  const { register , handleSubmit , errors, getValues } = useForm();
+  const onSubmit=(info)=> console.log(info);
+
+  
+  // const validate=(value)=>{
+  // const passwordvalue = watch("password")
+    
+  //     return passwordvalue
+  //   }
+  //watch is used to watch the value and is a react hook form function.
   return (
 
    <section>
@@ -29,20 +28,29 @@ export default function Sign_in() {
 
       <form id ='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
         <input type='text' placeholder='first name' {...register("name")}/>
-        <input type='text' placeholder='Email'{...register("email",{required:true})}/>
+        <input type='text' name=" email" placeholder='Email' {...register("email", { required: true })} />
+        {/* for emial entry */}
 
-        <input type='text' placeholder='password' {...register("password",
+        <input type='password' placeholder='Password' {...register("password",
         {required:true,
         minLength:7,})}/>
+        {/* password */}
         
+        <input type='password' placeholder='Confirm password' name='confirm-password'{...register("confirm-password", {required:true, minLength:7 ,
+        validate:()=>{
+          const passwordvalue=getValues("password");
+          const confirm_passwordvalue=getValues("confirm-password");
+          return passwordvalue===confirm_passwordvalue || "passwords do not match"
 
-        <input type='text' placeholder='Confirm-password' name='confirm-password'{...register("confirm-password", {required:true, minLength:7 ,
-          validate:(value)=>validate(value)
+        }
+
+          //watch us 
         })}/>
         {/* fix this  */}
-        {errors.email?.type === "required" && <p>Email is required</p>}
-        {errors.password?.type==="required"&&" confirm password is required"}
-        {errors.password?.type === "minLength" && "Atleast 7 characters is required"}
+        {errors?.email?.type === "required" && <p>Email is required</p>}
+        {errors?.password?.type==="required"&&" confirm password is required"}
+        {errors?.password?.type === "minLength" && "Atleast 7 characters is required"}
+      {/* errors?.variable? is a way of optional chaining and is used where object is underdefined or null */}
 
          
 

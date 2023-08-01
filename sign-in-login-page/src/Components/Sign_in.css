@@ -79,7 +79,8 @@ body{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   display: none;
-  
+  opacity: 2;
+  transition: opacity 1s ;
 }
 
 @media screen and (min-width: 860px)  {

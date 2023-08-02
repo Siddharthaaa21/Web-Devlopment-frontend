@@ -47,7 +47,7 @@ export default function SignIn() {
           //watch us 
         })}/>
         {/* fix this  */}
-        {errors?.email?.type === "required" && <p>Email is required</p>}
+        {errors?.email.type === "required" && <p className='errmsg'>Email is required</p>}
         {errors?.password?.type==="required"&&" confirm password is required"}
         {errors?.password?.type === "minLength" && "Atleast 7 characters is required"}
       {/* errors?.variable? is a way of optional chaining and is used where object is underdefined or null */}

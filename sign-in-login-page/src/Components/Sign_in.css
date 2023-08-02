@@ -82,6 +82,10 @@ body{
   opacity: 2;
   transition: opacity 1s ;
 }
+.errmsg{
+  color: red;
+  font-size: 0.8em;
+}
 
 @media screen and (min-width: 860px)  {
   .register .col-2 img{

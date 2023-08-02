@@ -37,7 +37,7 @@ function Forms() {
                   },
 
                 })}/>
-                {errors.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
+                {errors?.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
                 {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.pattern.message}</p>)}
 
         </div>

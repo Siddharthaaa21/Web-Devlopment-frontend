@@ -23,6 +23,8 @@ function Forms() {
   
     <div className='Forms-check'>
       <form onSubmit = {handleSubmit(onSubmit)}>
+        {/* handleSubmit is for the form to be submitted and is a function that will be called when the form is submitted 
+         */}
         <div className='Form-user-name'>
           <label>UserName</label>
           <input type="text"

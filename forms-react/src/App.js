@@ -5,8 +5,8 @@ import MyForm from './components/Two-step-form/Form';
 function App() {
   return (
     <div className="App">
-      {/* <Forms/> */}
-      <MyForm/>
+      <Forms/>
+      {/* <MyForm/> */}
     
     </div>
   );

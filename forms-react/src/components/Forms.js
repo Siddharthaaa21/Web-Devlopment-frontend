@@ -9,9 +9,7 @@ function Forms() {
         register, //is a funtion that will help us to register the inputs 
 
         handleSubmit, // is a function we use when the form is submitted 
-        formState: { errors },        //error is a nested property of fromState which contains validaton of errors
-
-        reset, 
+        formState: { errors },        //error is a nested property of fromState which contains validaton of errorsreset, 
     }=useForm(); 
     
     const onSubmit = (data_ob) =>
@@ -35,12 +33,15 @@ function Forms() {
                   pattern:{
                     value: /^(?=.*[A-Z])(?=.*[a-z])/,
                     message: "use on capital and rest small"
+                    // error is Cannot read properties of undefined (reading 'message') TypeError: Cannot read properties of undefined (reading 'message') 
+                  
                    
                   },
 
                 })}/>
-                {errors?.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
+                {errors.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
                 {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.pattern.message}</p>)}
+                {/* to use meesage which is a nested property of pattern*/}
 
         </div>
 

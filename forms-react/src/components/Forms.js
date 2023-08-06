@@ -31,7 +31,8 @@ function Forms() {
                 {
                   required: true,
                   pattern:{
-                    value: /^(?=.*[A-Z])(?=.*[a-z])/,
+                    value: /^(?=.*[A-Z])(?=.*[a-z]).+$/,
+
                     message: "use on capital and rest small"
                     // error is Cannot read properties of undefined (reading 'message') TypeError: Cannot read properties of undefined (reading 'message') 
                   
@@ -40,7 +41,8 @@ function Forms() {
 
                 })}/>
                 {errors.username && errors.username.type === "required" && (<p className='errorMsg'>not filled</p>)}
-                {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.pattern.message}</p>)}
+                {errors.username && errors.username.type === "pattern" && (<p className='errorMsg'>{errors.username.message}</p>)}
+              {/*  not errors.username.pattern.message since  */}
                 {/* to use meesage which is a nested property of pattern*/}
 
         </div>

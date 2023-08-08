@@ -1,4 +1,4 @@
-import React, { Component } from 'react'; 
+import React, { Component, Fragment } from 'react'; 
 import logo from './logo.svg';
 
 import './App.css';
@@ -16,6 +16,8 @@ import UserGreeting from './components/UserGreeting';
 import Stylesheets from './components/Stylesheets';
 import CustomclassName from './components/CustomclassName';
 import LifecycleA from './components/LifecycleA';
+import Fragments from './components/Fragments';
+import Table from './components/Table';
 
 
 
@@ -56,10 +58,13 @@ class App extends Component {
       <UserGreeting/> */}
       {/* <NameList/> */}
        {/* <Stylesheets/> 
-      <CustomclassName primary={false}/> */}
-      <LifecycleA/>
+      // <CustomclassName primary={false}/> */}
+      {/* // <LifecycleA/> */}
+     {/* <Fragments/> */}
+     <Table/>
     </div> 
-  );
+
+);
 }
 }
 

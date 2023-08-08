@@ -15,6 +15,7 @@ import UserGreeting from './components/UserGreeting';
 // import NameList from './NameList';
 import Stylesheets from './components/Stylesheets';
 import CustomclassName from './components/CustomclassName';
+import LifecycleA from './components/LifecycleA';
 
 
 
@@ -54,8 +55,9 @@ class App extends Component {
       <ParentComponent />
       <UserGreeting/> */}
       {/* <NameList/> */}
-       <Stylesheets/> 
-      <CustomclassName primary={false}/>
+       {/* <Stylesheets/> 
+      <CustomclassName primary={false}/> */}
+      <LifecycleA/>
     </div> 
   );
 }

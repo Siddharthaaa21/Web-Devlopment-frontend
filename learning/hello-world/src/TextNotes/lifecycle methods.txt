@@ -1,0 +1,27 @@
+four types 
+mounting : constructor get DerivedStatwFromProps, render and componentDidMount
+updating static getDerivedStatefromProps, shouldComponentUodate, render getSnapshotBeofreupdate and componentDidUpdate
+unmounting : componentWillUnmount 
+Error Handling : static getDerivedStateFromError and componentDidCatch 
+ there usages is crucial !!
+ 
+
+
+ constructor is used for initialising state nad bindin the event handlers 
+ DO not cause side effects ex hhtp request 
+ super(props)
+ directly overwrites this.state
+
+
+ static methodh getDerivedStatefromProps(props,state)
+ when the state of the component depends on changes in props over time
+
+
+ constructor omly requried method 
+ static method getDerivedStatefromProps readds props and state and return jsx
+    donot change state or interact with dom or make ajax calls
+    ajax calls are made in componentDidMount ???
+
+    render()
+    chidlren components lifecycle methods aare also executed!
+    

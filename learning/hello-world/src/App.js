@@ -18,6 +18,8 @@ import CustomclassName from './components/CustomclassName';
 import LifecycleA from './components/LifecycleA';
 import Fragments from './components/Fragments';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './ParentComp';
 
 
 
@@ -61,8 +63,11 @@ class App extends Component {
       // <CustomclassName primary={false}/> */}
       {/* // <LifecycleA/> */}
      {/* <Fragments/> */}
-     <Table/>
+     {/* <Table/> */}
+     {/* <PureComp/> */}
+      <ParentComp/>
     </div> 
+
 
 );
 }

@@ -2,10 +2,11 @@
 import React, { useState } from 'react'
 import {AsyncPaginate} from "react-select-async-paginate"
 
- const Search=()=> {
+ const Search=({onSeacrchChange})=> {
   const [search, setSearch]=useState(null); 
-  const handleOnChange={seacrhData}=>{
-    setSearch(seacrhData); 
+  const handleOnChange=(data_entered)=>{
+    setSearch(data_entered); 
+    onSeacrchChange(data_entered);
   }
 
   return (

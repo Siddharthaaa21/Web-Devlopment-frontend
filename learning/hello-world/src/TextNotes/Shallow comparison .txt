@@ -1,3 +1,6 @@
 shallows comparison 
  primitive types and complex types
- 
+ ccomplex types are objects which refrence the same object then theykl return truw 
+ pritibe on the othe hand int a =10 int b =10 a==b true
+ complex ones on the other hand a=10 b=10 a==b false
+int c=a c==a true so they refrence the point 

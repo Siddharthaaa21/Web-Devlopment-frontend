@@ -25,3 +25,6 @@ import ChildComponent from './ChildComponent'
 }
 
 export default ParentComponent
+
+//give a performance boast  redencring 50 elements !! 
+//never mutate the state always a new object that reflects the new state

@@ -5,6 +5,7 @@ export class Input extends Component {
         super(props)
         this.inputRef=React.createRef()
     }
+    
     focusInput(){
     this.inputRef.current.focus()
     }

@@ -21,8 +21,8 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './ParentComp';
 import RefsDemo from './components/RefsDemo';
-import Input from './components/Input';
-import focus_input from './components/focus_input';
+
+import FocusInput from './components/focus_input';
 
 
 
@@ -72,7 +72,8 @@ class App extends Component {
       {/* <ParentComp/> */}
       {/* <RefsDemo/> */}
        {/* <input/> */}
-       <focus_input/>
+       <FocusInput /> {/* Correct casing */}
+
 
     </div> 
 

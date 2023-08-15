@@ -14,3 +14,4 @@ export const GEO_API_url = 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities';
 // } catch (error) {
 // 	console.error(error);
 // }
+

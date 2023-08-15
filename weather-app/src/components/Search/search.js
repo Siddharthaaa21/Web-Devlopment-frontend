@@ -18,7 +18,7 @@ const Search = ({ onSeacrchChange }) => {
           label: `${city.name} ${city.countryCode}`,
         })),
       }))
-      .catch((err) => {
+      .catch((err) => { 
         console.error(err);
       });
   };

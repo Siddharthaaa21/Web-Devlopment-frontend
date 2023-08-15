@@ -1,0 +1,12 @@
+.weather-one{
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 10px -2px 10px 10px rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    background-color: rgb(40, 29, 29);
+    margin: 0 auto;
+    /* auto is used to center the div */
+     }
+     .upper{
+
+     }

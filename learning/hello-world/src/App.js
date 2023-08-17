@@ -23,6 +23,7 @@ import ParentComp from './ParentComp';
 import RefsDemo from './components/RefsDemo';
 
 import FocusInput from './components/focus_input';
+import FRParentInput from './components/FRParentInput';
 
 
 
@@ -72,7 +73,8 @@ class App extends Component {
       {/* <ParentComp/> */}
       {/* <RefsDemo/> */}
        {/* <input/> */}
-       <FocusInput /> {/* Correct casing */}
+       {/* <FocusInput /> Correct casing */}
+       <FRParentInput/>
 
 
     </div> 

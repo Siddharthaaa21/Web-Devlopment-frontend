@@ -24,6 +24,7 @@ import RefsDemo from './components/RefsDemo';
 
 import FocusInput from './components/focus_input';
 import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
 
 
 
@@ -74,7 +75,8 @@ class App extends Component {
       {/* <RefsDemo/> */}
        {/* <input/> */}
        {/* <FocusInput /> Correct casing */}
-       <FRParentInput/>
+       {/* <FRParentInput/> */}
+       <PortalDemo/>
 
 
     </div> 

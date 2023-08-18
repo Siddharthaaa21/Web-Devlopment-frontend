@@ -78,8 +78,9 @@ class App extends Component {
        {/* <FocusInput /> Correct casing */}
        {/* <FRParentInput/> */}
        {/* <PortalDemo/> */}
-       <ClickCounter/>
-       <HoverCounter/>
+        <ClickCounter/>
+       <HoverCounter/> 
+       
 
 
     </div> 

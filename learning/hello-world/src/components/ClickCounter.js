@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export class ClickCounter extends Component {
+import UpdatedComponent from'./withCounter'
+ class ClickCounter extends Component {
     constructor(props) {
       super(props)
     
@@ -28,7 +28,7 @@ export class ClickCounter extends Component {
   }
 }
 
-export default ClickCounter
+export default UpdatedComponent(ClickCounter) 
 //class component
 
 //how to use the same counter funtionailty ;;;; use in app component but if counter component are scattered then ? there has to be shared using concepts of higher order component

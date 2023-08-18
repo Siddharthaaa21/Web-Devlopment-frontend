@@ -26,7 +26,8 @@ import FocusInput from './components/focus_input';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
 
-
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component {
   render() {
@@ -76,7 +77,9 @@ class App extends Component {
        {/* <input/> */}
        {/* <FocusInput /> Correct casing */}
        {/* <FRParentInput/> */}
-       <PortalDemo/>
+       {/* <PortalDemo/> */}
+       <ClickCounter/>
+       <HoverCounter/>
 
 
     </div> 

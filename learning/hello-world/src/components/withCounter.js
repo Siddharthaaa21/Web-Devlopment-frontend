@@ -2,21 +2,29 @@ import React from "react";
 
 const UpdatedComponent = (OriginalComponent) => {
     class NewComponent extends React.Component {
-        incrementCount = () => {
-            this.setState(prevState_checker => {
-                return { count: prevState_checker.count + 1 }
-            })
+        constructor(props) {
+            super(props);
+            this.state = {
+                count: 0
+            };
         }
+
+        incrementCount = () => {
+            this.setState(prevState => {
+                return { count: prevState.count + 1 };
+            });
+        };
+
         render() {
-            return <OriginalComponent
-                count={this.state.count}
-                incrementCount={this.incrementCount}
-            />
+            return (
+                <OriginalComponent
+                    count={this.state.count}
+                    incrementCount={this.incrementCount}
+                />
+            );
         }
     }
-    return NewComponent
+    return NewComponent;
+};
 
-
-}
-export default UpdatedComponent
-//hsc
+export default UpdatedComponent;

@@ -1,6 +1,7 @@
 import React from "react";
 
 const UpdatedComponent = (OriginalComponent) => {
+    //here originalcomponent is clickcounter and the updated one is this .... new component is 
     class NewComponent extends React.Component {
         constructor(props) {
             super(props);

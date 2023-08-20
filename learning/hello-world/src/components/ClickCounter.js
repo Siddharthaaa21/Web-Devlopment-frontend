@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import UpdatedComponent from'./withCounter'
  class ClickCounter extends Component {
-    constructor(props) {
-      super(props)
+    // constructor(props) {
+    //   super(props)
     
-      this.state = {
-         count:0
-      }
-    } 
+    //   this.state = {
+    //      count:0
+    //   }
+    // } 
     // incrementCount=()=>{
     //     this.setState(prevState_checker=>{
     //         return{count:prevState_checker.count+1}

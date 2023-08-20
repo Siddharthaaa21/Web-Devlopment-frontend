@@ -1,6 +1,6 @@
 import React from "react";
 
-const UpdatedComponent = (OriginalComponent) => {
+const withCounter = (WrappedComponent,incrementNum) => {
     //here originalcomponent is clickcounter and the updated one is this .... new component is 
     class NewComponent extends React.Component {
         constructor(props) {
@@ -12,15 +12,19 @@ const UpdatedComponent = (OriginalComponent) => {
 
         incrementCount = () => {
             this.setState(prevState => {
-                return { count: prevState.count + 1 };
+                return { count: prevState.count + incrementNum };
             });
         };
 
         render() {
             return (
-                <OriginalComponent
+                <WrappedComponent
                     count={this.state.count}
                     incrementCount={this.incrementCount}
+                    {...this.props}
+                    //spread operatore used to pass remaining props specificed to both 
+                    //make sure you do this 
+
                 />
             );
         }
@@ -28,4 +32,4 @@ const UpdatedComponent = (OriginalComponent) => {
     return NewComponent;
 };
 
-export default UpdatedComponent;
+export default withCounter;

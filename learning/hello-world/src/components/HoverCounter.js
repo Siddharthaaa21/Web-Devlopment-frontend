@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UpdatedComponent from './withCounter'
+import WrappedComponent from './withCounter'
 
  class HoverCounter extends Component {
     // constructor(props) {
@@ -28,4 +28,4 @@ import UpdatedComponent from './withCounter'
   }
 }
 
-export default UpdatedComponent(HoverCounter)
+export default WrappedComponent(HoverCounter,10)

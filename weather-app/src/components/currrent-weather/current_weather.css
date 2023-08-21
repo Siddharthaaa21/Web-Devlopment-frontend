@@ -67,7 +67,13 @@
       text-align: right;
       font-weight: 600;
       font-size: 12px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+
+    }
+    .parameter-label.top{
+      font-weight: 700;
+      border-bottom: 1px solid rgb(223, 232, 240);
+
     }
 
     

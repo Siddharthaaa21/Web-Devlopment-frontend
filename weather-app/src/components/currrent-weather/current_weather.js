@@ -22,7 +22,7 @@ const Current = () => {
         <p className="temp">18° </p>
         <div className="details">
           <div className="parameter-row">
-            <span className="parameter-label"> Details </span>
+            <span className="parameter-label top"> Details </span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">feels like </span>

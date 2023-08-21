@@ -86,10 +86,10 @@ class App extends Component {
        <HoverCounter/>  */}
        {/* <ClickCounter2/>
        <HoverCounter2/> */}
-       <UserProvider value="siddhartha">
-       <ComponentC/>
+       {/* <UserProvider value="siddhartha"> */}
+       <ComponentF/>
 
-       </UserProvider>
+       {/* </UserProvider> */}
        {/* //adding top layer and provide the valuw to attribut  */}
 
        

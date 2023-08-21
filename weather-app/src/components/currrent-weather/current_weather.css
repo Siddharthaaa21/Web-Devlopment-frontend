@@ -8,7 +8,8 @@
     /* auto is used to center the div */
     padding: 0 20px 20px 20px;
      }
-     .upper{
+     .upper,
+     .bottom{
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -39,3 +40,22 @@
         /* transform: rotate(90deg); */
         /* transition: opacity 0.7s; */
      }}
+     
+    .temp{
+      font-weight: 600;
+      font-size: 70px;
+      width: auto;
+      letter-spacing:-5px ;
+      margin: 10px 0;
+    }
+    .parameter-row  {
+      display: flex;
+      justify-content: space-between;
+
+    }    
+    .details{
+      width: auto;
+      padding-left: 20px;
+    }
+
+    

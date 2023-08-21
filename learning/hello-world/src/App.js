@@ -30,7 +30,9 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounter2 from './components/ClickCounter2';
 import HoverCounter2 from './components/HoverCounter2';
-
+import ComponentC from './components/ComponentC';
+import {UserProvider,UserConsumer} from './components/userContext'
+import ComponentF from './components/ComponentF';
 class App extends Component {
   render() {
   return (
@@ -82,8 +84,14 @@ class App extends Component {
        {/* <PortalDemo/> */}
         {/* <ClickCounter/>
        <HoverCounter/>  */}
-       <ClickCounter2/>
-       <HoverCounter2/>
+       {/* <ClickCounter2/>
+       <HoverCounter2/> */}
+       <UserProvider value="siddhartha">
+       <ComponentC/>
+
+       </UserProvider>
+       {/* //adding top layer and provide the valuw to attribut  */}
+
        
 
 

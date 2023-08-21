@@ -1,0 +1,11 @@
+three steps to create a context{
+    firsty context are basicaly a object that is used to share data between components without passing props manually at every level
+    like in tree and we can access and share the props with eny component
+}
+
+the steps now 
+1 create the context
+2 provide a context value
+3 consume the context value
+
+*/

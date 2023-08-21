@@ -7,7 +7,7 @@ import './TodoWrapper';
 
 
 
-export const TodoForm =({addTodo})=>{
+export const TodoForm =({addTodo,day})=>{
   
     const [value, setValue]=useState("")
      const handleSubmit = e=>{
@@ -33,7 +33,7 @@ export const TodoForm =({addTodo})=>{
         
       
         <input type="text" className='todo-input' value={value} 
-        placeholder='What are the task for today'
+        placeholder='What are the task for ' day={day}
         onChange={(e)=> setValue(e.target.value)}/>
     
         <button type='submit' className='Todo-button'>Commit</button>

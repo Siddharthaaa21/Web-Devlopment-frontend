@@ -10,18 +10,24 @@ const Search = ({ onSeacrchChange }) => {
     onSeacrchChange(data_entered);
   }
   const loadOptions = (inputVal) => {
-    return fetch(`${GEO_API_url}/cities?minPopulation=1000000&namePrefix=${inputVal}`, geoApiOption)
+    return fetch(`${GEO_API_url}?minPopulation=1000000&namePrefix=${inputVal}`, geoApiOption)
       .then((response) => response.json())
-      .then((response) => ({
-        options: response.data.map((city) => ({
+      .then((response) => {
+        console.log('API Response:', response); // Log the entire API response
+        const options = response.data.map((city) => ({
           value: `${city.latitude} ${city.longitude}`,
           label: `${city.name} ${city.countryCode}`,
-        })),
-      }))
+        }));
+        console.log('Options:', options); // Log the transformed options array
+        return { options };
+      })
       .catch((err) => { 
         console.error(err);
       });
   };
+  
+  
+  
   
   //to load options for the pages and takes the variable input val
 

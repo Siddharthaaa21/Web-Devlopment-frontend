@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import img1 from './Components/assests/img1'
+import img1 from './assets/images/img1.jpg';
 
 import './Sign_in.css'
 import { Link } from 'react-router-dom';

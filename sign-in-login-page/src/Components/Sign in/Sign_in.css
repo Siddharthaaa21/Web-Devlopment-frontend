@@ -92,3 +92,10 @@ body{
     display: initial;
   }
 }
+.loginlink{
+  color: #5bc5fe;
+  font-size: 0.8em;
+-webkit-text-fill-color: #5bc5fe;  
+  margin-top: 1em;
+  display: block;
+}

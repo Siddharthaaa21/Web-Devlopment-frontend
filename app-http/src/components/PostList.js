@@ -13,7 +13,7 @@ export class PostList extends Component {
     componentDidMount(){
        axios.get('https://jsonplaceholder.typicode.com/posts')
         //invole the get mothode foe making the get request since it is executed only onces  during components lifetime
-        //promise base libreary 
+        //promise base libreary  so we can add then and catch block
         .then(response=>{
             console.log(response)
             this.setState({posts:response.data})

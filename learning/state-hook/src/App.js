@@ -5,16 +5,18 @@ import HooksCounter from './components/HooksCounter';
 import HooksCounterTwo from './components/HooksCounterTwo';
 import HooksCounterThree from './components/HooksCounterThree';
 import HooksCounterFour from './components/HooksCounterFour';
+import HookCounterOne from './components/HookCounterOne';
 
 function App() {
   return (
     <div className="App">
-      <ClassCounter/>
+      {/* <ClassCounter/>
       <HooksCounter/>
       <HooksCounterTwo/>
       <HooksCounterThree/>
-      <HooksCounterFour/> 
-    </div>
+      <HooksCounterFour/>  */}
+      <HookCounterOne/>    
+      </div>
   );
 }
 

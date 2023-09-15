@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import img1 from './assests/images/img1.jpg'
+// import { Link } from 'react-router-dom'; // You're using Link here, so make sure this is imported.
+// import img1 from '../assests/img1.jpg'; // Ensure the image path is correct.
+import './Sign_in.css';
 
-import './Sign_in.css'
-import { Link } from 'react-router-dom';
+//import { Switch, Route } from "react-router-dom";
+//to
 
 
 
@@ -54,7 +56,7 @@ export default function SignIn() {
             })} />
             {/* fix this  */}
             {errors?.email.type === "required" && <p className='errmsg'>Email is required</p>}
-            {errors?.password?.type === "required" && " confirm password is required"}
+            {errors?.password?.type === "required" && <p className='errmsg'>Confirm password is required</p>}
             {errors?.password?.type === "minLength" && "Atleast 7 characters is required"}
             {/* errors?.variable? is a way of optional chaining and is used where object is underdefined or null */}
 
@@ -62,13 +64,13 @@ export default function SignIn() {
 
             <button className='btn'>Sign In</button>
           </form>
-          <p>Don't have an account? <Link to="/login">Log in here</Link></p>
+          {/* <p>Don't have an account? <Link to="/login">Log in here</Link></p> */}
         </div>
 
 
-        <div className="col-2">
+        {/* <div className="col-2">
           <img src={img1} alt="" />
-        </div>
+        </div> */}
 
 
 

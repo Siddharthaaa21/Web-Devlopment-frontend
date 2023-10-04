@@ -23,7 +23,7 @@ const roomInputRef=useRef(null);
   return (
     <div>
       {room ? (
-<Chat/>      ) : (
+<Chat room={room}/>      ) : (
         <div className="room">
           <label>Room ID:</label>
           <input  ref={roomInputRef}/>

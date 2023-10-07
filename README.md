@@ -43,8 +43,3 @@ Just ensure your contributions align with the focus of this repository – React
 
 🐦 **Twitter**: Follow my coding journey and more at [Siddharthaaa21](https://twitter.com/Siddharthaaa21).
 
-## License
-
-This repository is licensed under the [MIT License](./LICENSE). Feel free to learn, experiment, and grow using the code and resources here.
-
-Empower your front-end skills and craft exceptional web experiences!
